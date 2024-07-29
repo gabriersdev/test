@@ -10,8 +10,8 @@
         setTimeout(() => {
             try {
                 // Vibrate 'SOS' in Morse
-                navigator.vibrate([
-                    2000, 1000, 2000, 1000, 3000
+                window.navigator.vibrate([
+                    2000, 10, 1000, 10, 2000, 10, 1000, 20, 3000
                 ]);
             } catch (error) {
                 alert('Error: ' + error.message);
